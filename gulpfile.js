@@ -126,7 +126,7 @@ gulp.task('live-index', function() {
         .pipe(gulp.dest('dist/'));
 });
 
-// Just html or JS changes
+// Just html or JS changes a 'quick'
 // arrays run sequentially, contents of arrays run in parallel.
 gulp.task('quick',
     ['lint', 'minify-js', 'copy-html-files', 'prebuilt-index']
